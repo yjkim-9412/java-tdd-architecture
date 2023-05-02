@@ -6,7 +6,7 @@ import com.arcmovie.discount.domain.movie.condition.DiscountCondition;
 
 import java.util.List;
 
-public class PercentDiscountPolicy extends DiscountPolicy{
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
 
     private double percent;
 

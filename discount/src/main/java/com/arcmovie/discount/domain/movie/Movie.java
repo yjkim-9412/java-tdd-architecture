@@ -1,8 +1,7 @@
 package com.arcmovie.discount.domain.movie;
 
-import com.arcmovie.discount.domain.movie.discountpolicy.DiscountPolicy;
+import com.arcmovie.discount.domain.movie.discountpolicy.DefaultDiscountPolicy;
 
-import java.math.BigDecimal;
 import java.time.Duration;
 
 public class Movie {
@@ -10,9 +9,9 @@ public class Movie {
     private String title;
     private Duration runningTime;
     private Money fee;
-    private DiscountPolicy discountPolicy;
+    private DefaultDiscountPolicy discountPolicy;
 
-    public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
+    public Movie(String title, Duration runningTime, Money fee, DefaultDiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
         this.fee = fee;

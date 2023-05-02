@@ -6,7 +6,7 @@ import com.arcmovie.discount.domain.movie.condition.DiscountCondition;
 
 import java.util.List;
 
-public class AmountDiscountPolicy extends DiscountPolicy{
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
 
     private Money discountAmount;
 
